@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Home</h1>
-    <p>Welcome to my home page!</p>
-</body>
-</html>
+{% extends 'base.html'%}
+
+{% block title %}
+    Home
+{% endblock %}    
+
+{% block css %}
+   
+{% endblock %}
+
+{% block content %}
+    <h1>Hello World using Django and Jinja!</h1>
+{% endblock %}    
