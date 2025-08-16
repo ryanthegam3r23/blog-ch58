@@ -2,16 +2,16 @@
 {% load crispy_forms_tags %}
 
 {% block title %}
-    New Post
+    Edit Post
 {% endblock %}
 
 {% block content %}
     <div class="container" style="margin-bottom: 20px;">
-        <h1 class="m-5 text-center">Create New Post</h1>
+        <h1 class="m-5 text-center">Edit Post</h1>
         <form method="post">
             {% csrf_token %}
             {{form|crispy}}
-            <input type="submit" value="Create" class="btn btn-success d-block mx-auto">
+            <input type="submit" value="Save" class="btn btn-success d-block mx-auto">
         </form>
     </div>
 {% endblock %}
