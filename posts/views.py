@@ -74,3 +74,12 @@ class PostUpdateView(UpdateView):
     model = Post
     template_name = "posts/edit.html"
     fields = ["title","subtitle","body","status"]
+
+    def test_func(self):
+        post = self.get_object()
+        if post.author != self.request.user:
+            print("You're not the author of this post!")
+            return False
+        else:
+            print("Go ahead and do whatever you want!")
+            return True
